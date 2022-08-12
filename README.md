@@ -63,7 +63,9 @@ public Object getUser(@RequestParam String username){
 
 ![3](./docs/3.jpg)
 
-## 基于数据库认证
+## 场景
+
+### 基于数据库认证
 
 #### 1. 创建Security的配置类WebSecurityConfig继承WebSecurityConfigurerAdapter
 
