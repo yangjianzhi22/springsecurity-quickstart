@@ -90,8 +90,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .authorizeHttpRequests()
                 .antMatchers(
-                        "/authentication",
-                        "/swagger-ui.html", "/webjars/**", "/v2/**", "/swagger-resources/**"
+                        "/login",
+                        "/swagger-ui.html",
+                        "/swagger-ui/*",
+                        "/swagger-resources/**",
+                        "/v2/api-docs",
+                        "/v3/api-docs",
+                        "/webjars/**"
                 ).permitAll()
                 .anyRequest().authenticated()
 
